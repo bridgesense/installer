@@ -9,7 +9,7 @@ URL: http://www.red5.org/
 Group: Applications/Networking
 BuildRoot: %{_builddir}/%{name}-%{version}-%{release}-root
 Requires: chkconfig
-Requires: java
+Requires: java-11-openjdk
 
 %define red5_home   /var/lib/red5
 
