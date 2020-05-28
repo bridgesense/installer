@@ -10,8 +10,8 @@ GITHUB_URL="https://github.com"
 
 SERVER_VERSION=
 SERVER_URL="$GITHUB_URL/Red5/red5-server"
-SERVER_DOWNLOAD_URL="$SERVER_URL/releases/download/v\${version}-RELEASE/"
-SERVER_ARCHIVE_NAME="red5-server-\${version}-RELEASE-server.tar.gz"
+SERVER_DOWNLOAD_URL="$SERVER_URL/releases/download/v\${version}/"
+SERVER_ARCHIVE_NAME="red5-server-\${version}.tar.gz"
 
 # requires
 NEEDED_COMMANDS=(

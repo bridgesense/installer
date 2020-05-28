@@ -2,4 +2,9 @@
 *.exe
 windows/work
 debian/src/tarball
-
+redhat/BUILD/*
+redhat/SOURCES/*
+redhat/SPECS/*
+redhat/*.gz
+redhat/RPMS/*
+redhat/SRPMS/*

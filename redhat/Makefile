@@ -1,5 +1,5 @@
 VERSION=
-SOURCE0=red5-server-$(VERSION)-RELEASE-server.tar.gz
+SOURCE0=red5-server-$(VERSION).tar.gz
 SOURCE1=red5.init
 SPEC=red5.spec
 TOPDIR=$(shell pwd)

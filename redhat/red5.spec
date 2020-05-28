@@ -2,7 +2,7 @@ Summary: Red5 Server
 Name: red5
 Version: @VERSION@
 Release: 1%{?dist}
-Source0: %{name}-server-%{version}-RELEASE-server.tar.gz
+Source0: %{name}-server-%{version}.tar.gz
 Source2: red5.init
 License: Apache Software License 2.0
 URL: http://www.red5.org/
@@ -17,7 +17,7 @@ Requires: java
 The Red5 open source Flash server allows you to record and stream video to the Flash Player.
 
 %prep
-%setup -q -n red5-server-%{version}-RELEASE
+%setup -q -n red5-server
 
 %build
 rm -f *.bat
@@ -52,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %attr(0755,root,root) %dir %{red5_home}/conf
 %config %{red5_home}/conf/*
+%config(noreplace) /var/lib/red5/*
 
 %attr(0755,root,root) %dir %{red5_home}/log
 
